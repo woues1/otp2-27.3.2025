@@ -26,8 +26,7 @@ public class HelloController {
     public ResourceBundle getResourceBundle(){
         return rb;
     }
-    public double calculate(double distance, double fuel){
-        double res = distance/fuel;
-        return res;
+    public double calc(double distance, double fuelConsumption){
+        return Calculator.calculate(distance, fuelConsumption);
     }
 }
